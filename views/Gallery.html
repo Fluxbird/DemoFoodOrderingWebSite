@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+        transition: all 0.2s cubic-bezier(0.34, 1.12, 0.68, 1.31);
+        background: url("Gallery.jpeg") center/cover;
+      }
+
+      .gallery {
+        min-height: 100vh;
+        background: #eee;
+        padding-bottom: 100px;
+      }
+
+      .controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        list-style: none;
+      }
+
+      .buttons {
+        height: 40px;
+        width: 140px;
+        background: #fff;
+        color: #666;
+        font-size: 20px;
+        line-height: 40px;
+        cursor: pointer;
+        margin: 20px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+        text-align: center;
+      }
+
+      .active {
+        background: rgb(173, 8, 8);
+        color: #fff;
+      }
+
+      .image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .image {
+        height: 250px;
+        width: 350px;
+        overflow: hidden;
+        border: 15px solid #fff;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+        margin: 20px;
+      }
+
+      .image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .image:hover img {
+        transform: scale(1.4);
+      }
+
+      .nav {
+        border-radius: 5%;
+      }
+
+      /*Navigation Bar*/
+      #navbar {
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      /* Navigation Bar:Logo and Image */
+      #logo {
+        margin: 74px, 45px;
+      }
+
+      #logo img {
+        height: 30px;
+        width: 30px;
+        margin: 10px 4px;
+      }
+
+      /* Navigation Bar: List Styling */
+
+      #navbar ul {
+        display: flex;
+      }
+
+      #navbar::before {
+        /*Pseudo Selector*/
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+      }
+
+      #navbar ul li {
+        list-style: none;
+        font-size: 1.1rem;
+      }
+      #navbar ul li a {
+        color: rgb(0, 0, 0);
+        display: flex;
+        padding: 3px 12px;
+        border-radius: 20px;
+        text-decoration: none;
+      }
+
+      #navbar ul li a:hover {
+        color: rgb(9, 142, 25);
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="Logo.jpg" alt="HealthyEats.com" />
+      </div>
+      <ul>
+        <li class="item"><a href="/">Home</a></li>
+        <li class="item"><a href="/Gallery">Gallery</a></li>
+        <li class="item"><a href="/Menu">Menu</a></li>
+        <li class="item"><a href="/eng">Food Order</a></li>
+        <li class="item1"><a href="/logout">LOGOUT</a></li>
+
+      </ul>
+    </nav>
+    <div class="gallery">
+      <ul class="controls">
+        <li class="buttons active" data-filter="all">all</li>
+        <li class="buttons" data-filter="ice-cream">ice-cream</li>
+        <li class="buttons" data-filter="chocolate">chocolate</li>
+        <li class="buttons" data-filter="cake">cake</li>
+        <li class="buttons" data-filter="juice">juice</li>
+        <li class="buttons" data-filter="sandwich">sandwich</li>
+      </ul>
+
+      <div class="image-container">
+        <a href="Ice-cream1.jpeg" class="image ice-cream">
+          <img src="Ice-cream1.jpeg" alt="" />
+        </a>
+        <a href="Ice-cream2.jpeg" class="image ice-cream">
+          <img src="Ice-cream2.jpeg" alt="" />
+        </a>
+        <a href="Ice-cream3.jpeg" class="image ice-cream">
+          <img src="Ice-cream3.jpeg" alt="" />
+        </a>
+
+        <a href="Chocolate1.avif" class="image chocolate">
+          <img src="Chocolate1.avif" alt="" />
+        </a>
+        <a href="Chocolate2.avif" class="image chocolate">
+          <img src="Chocolate2.avif" alt="" />
+        </a>
+
+        <a href="Cake1.avif" class="image cake">
+          <img src="Cake1.avif" alt="" />
+        </a>
+        <a href="Cake2.avif" class="image cake">
+          <img src="Cake2.avif" alt="" />
+        </a>
+        <a href="Cake3.avif" class="image cake">
+          <img src="Cake3.avif" alt="" />
+        </a>
+        <a href="Cake4.avif" class="image cake">
+          <img src="Cake4.avif" alt="" />
+        </a>
+        <a href="Cake5.avif" class="image cake">
+          <img src="Cake5.avif" alt="" />
+        </a>
+
+        <a href="Juice1.avif" class="image juice">
+          <img src="Juice1.avif" alt="" />
+        </a>
+        <a href="Juice2.avif" class="image juice">
+          <img src="Juice2.avif" alt="" />
+        </a>
+        <a href="Juice3.avif" class="image juice">
+          <img src="Juice3.avif" alt="" />
+        </a>
+
+        <a href="Sandwich1.avif" class="image sandwich">
+          <img src="Sandwich1.avif" alt="" />
+        </a>
+        <a href="Sandwich2.avif" class="image sandwich">
+          <img src="Sandwich2.avif" alt="" />
+        </a>
+        <a href="Sandwich3.avif" class="image sandwich">
+          <img src="Sandwich3.avif" alt="" />
+        </a>
+        <a href="Sandwich4.avif" class="image sandwich">
+          <img src="Sandwich4.avif" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".buttons").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+
+          var filter = $(this).attr("data-filter");
+
+          if (filter == "all") {
+            $(".image").show(400);
+          } else {
+            $(".image")
+              .not("." + filter)
+              .hide(200);
+            $(".image")
+              .filter("." + filter)
+              .show(400);
+          }
+        });
+
+        $(".gallery").magnificPopup({
+          delegate: "a",
+          type: "image",
+          gallery: {
+            enabled: true,
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

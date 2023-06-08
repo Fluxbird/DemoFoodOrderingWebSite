@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+*{
+  background-color: wheat;
+}
+#heading{
+    color: rgb(107, 14, 36);
+    text-align: center;
+    font-size: 5.8rem ;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+.services{
+    margin: 14px;
+    /* display: flex; */
+}
+
+.box{
+    margin-bottom:20px ;
+    padding: 2px;
+}
+.card{
+    border: 3px solid brown;
+    border-radius: 10px;
+    padding: 2px;
+}
+.services-container{
+    margin: 10px;
+}
+
+.services{
+    margin: 10px;
+   
+    
+}
+
+.card img{
+    height:100px;
+    width: 100px;
+}
+body{
+    content:"";
+    
+    position: absolute;
+    width: 100%;
+    height: 53%;
+    
+}
+
+.nav {
+        border-radius: 5%;
+      }
+
+      /*Navigation Bar*/
+      #navbar {
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+      /* Navigation Bar:Logo and Image */
+      #logo {
+        margin: 74px, 45px;
+      }
+
+      #logo img {
+        height: 30px;
+        width: 30px;
+        margin: 10px 4px;
+      }
+
+      /* Navigation Bar: List Styling */
+
+      #navbar ul {
+        display: flex;
+      }
+
+      #navbar::before {
+        /*Pseudo Selector*/
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+      }
+
+      #navbar ul li {
+        list-style: none;
+        font-size: 1.1rem;
+      }
+      #navbar ul li a {
+        color: white;
+        display: flex;
+        padding: 3px 12px;
+        border-radius: 20px;
+        text-decoration: none;
+      }
+
+      #navbar ul li a:hover {
+        color: black;
+        background-color: white;
+      }
+
+
+</style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <div id="logo">
+      <img src="Logo.jpg" alt="HealthyEats.com" />
+    </div>
+    <ul>
+      <li class="item"><a href="/">Home</a></li>
+      <li class="item"><a href="/Gallery">Gallery</a></li>
+      <li class="item"><a href="/Menu">Menu</a></li>
+      <li class="item"><a href="/eng">Food Order</a></li>
+      <li class="item1"><a href="sign_up">Login</a></li>
+      <li class="item1"><a href="login">Sign_Up</a></li>
+    </ul>
+  </nav>
+
+  <div class="main">
+    <h1 id="heading">MENU</h1>
+    <section class="services-container">
+        <div class="services">
+            <div class="row">
+                <div class="box col-sm-3">
+                    <div class="card" style="width: 22rem; height: 30rem;">
+                        <img src="FD1.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body h-100">
+                          <h5 class="card-title">CAESAR BOWL</h5>
+                          <p class="card-text"> Romaine/ iceberg lettuce tossed in our signature Caesar dressing with Parmesan cheese shavings, croutons and cherry tomatoes Available with chicken also</p>
+                          <a href="#" class="btn btn-primary">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="box col-sm-3">
+                    <div class="card" style="width: 22rem; height: 30rem;">
+                        <img src="FD2.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">ELANEER PAYASAM</h5>
+                          <p class="card-text">Locavore Cardamom scented sweet coconut milk topped with fried cashew nut and raisins</p>
+                          <a href="#" class="btn btn-primary">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="box col-sm-3">
+                    <div class="card" style="width: 24rem; height: 30rem;">
+                        <img src="FD3.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">PANEER KATHI </h5>
+                          <p class="card-text">Batons of cottage cheese tomatoes, onion and capsicum sauteed  and tossed in tomato gravy, rolled in Roomali Roti and served with mint chutney and salad</p>
+                          <a href="#" class="btn btn-primary">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="box col-sm-3">
+                    <div class="card" style="width: 22rem; height: 30rem;">
+                        <img src="FD4.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">AJWAINI PANEER TIKKA</h5>
+                          <p class="card-text">Chunks of fresh cottage cheese, marinated in a batter of cream ajwain and chilli powder. Skewered and grilled in the traditional oven</p>
+                          <a href="#" class="btn btn-primary">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+            
+                <!--NEW ROW-->
+            </div>
+            <div class="row">
+                <div class="box col-sm-3">
+                    <div class="card" style="width: 22rem; height: 30rem;">
+                        <img src="FD5.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">SUBZ SEEKH GILAFI</h5>
+                          <p class="card-text">A combination of finely diced vegetables mixed with ginger, green  coriander, cashew nut paste, skewered and finished in tandoor</p>
+                          <a href="#" class="btn btn-primary">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="box col-sm-3">
+                    <div class="card" style="width: 22rem; height: 30rem;">
+                        <img src="FD6.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">VEGETABLE CROQUETTES</h5>
+                          <p class="card-text">Potato and spinach mash, infused with cashew nuts and fried crisp, served with tomato sauce  250</p>
+                          <a href="#" class="btn btn-primary">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="box col-sm-3">
+                    <div class="card" style="width: 22rem; height: 30rem;">
+                        <img src="FD7.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">VEGETABLE LASAGNE</h5>
+                          <p class="card-text">Layers of tomato, aubergine and onion between the pasta sheets, covered with cheese & white sauce. Gratinated under salamander & served</p>
+                          <a href="#" class="btn btn-primary">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                
+                <div class="box col-sm-3">
+                    <div class="card" style="width: 22rem; height: 30rem;">
+                        <img src="FD8.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">BAKED VEGETABLES</h5>
+                          <p class="card-text"> Fresh garden vegetables cooked in white sauce, sprinkled upon with grated cheese & gratinated.</p>
+                          <a href="#" class="btn btn-primary">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                
+                
+            
+        </div>
+    </section>
+  </div>
+    
+    
+</body>
+</html>

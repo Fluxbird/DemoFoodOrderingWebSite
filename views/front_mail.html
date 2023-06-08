@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Online Food Delivery Services | HealthyEats.com</title>
+    <style>
+      
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables*/
+:root{
+    --navbar-height: 59px;
+}
+
+.header{
+    padding: 10px;
+}
+
+.nav{
+    border-radius: 5%;
+}
+
+/*Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+/* Navigation Bar:Logo and Image */
+#logo{
+   margin: 74px, 45px;
+}
+
+#logo img{
+    height: 30px;
+    width: 30px;
+    margin: 10px 4px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{ /*Pseudo Selector*/
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+#navbar ul li a{
+    color: white;
+    display: flex;
+    padding: 3px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction:column ;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ /*[Pseudo Selector*/
+    content:"";
+    background: url('Bg4.jpg') no-repeat center/cover;
+    background-repeat: 1 repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    background-color: black;
+}
+
+#home h1{
+    color: rgb(107, 14, 36);
+    text-align: center;
+    font-size: 2.8rem ;
+    padding: 12px;
+}
+
+#home p{
+    color: rgb(177, 133, 50);
+    text-align: center;
+    font-size: 1.8rem;
+}
+/*Services Section*/
+.services{
+    margin: 14px;
+    display: flex;
+}
+
+.box{
+    border: 2px solid brown;
+    padding: 14px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: #f2f2f2;
+}
+
+.box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+.box p{
+     
+}
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url(bg3.jpg);
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+/*Contact Section*/
+#contact{
+    position: relative;
+    height: 500px;
+ }
+
+#contact::before{
+    content: "";
+    background: url('contact-us.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+}
+ footer{
+    background: black;
+    color: white;
+    padding: 7px 20px;
+ }
+/*Utility Classes*/
+.h-primary{
+    font-size: 2.8rem ;
+    padding: 12px;
+
+}
+.h-secondary{
+    font-size: 1.8rem ;
+    padding: 12px;
+
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:wheat ;
+    color: red;
+    margin: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="Logo.jpg" alt="HealthyEats.com" />
+      </div>
+      <ul>
+        <li class="item"><a href="/">Home</a></li>
+        <li class="item"><a href="/Gallery">Gallery</a></li>
+        <li class="item"><a href="/Menu">Menu</a></li>
+        <li class="item"><a href="/eng">Food Order</a></li>
+        <li class="item1"><a href="sign_up">Login</a></li>
+        <li class="item1"><a href="login">Sign_Up</a></li>
+      </ul>
+    </nav>
+    <section id="home">
+      <h1 class="heading">Welcome to Healthy Eats</h1>
+      <p>
+        Healthy Eats strives to source local, sustainable and organic when
+        possible. We work hard to source premium ingredients and we cook
+        everything from scratch with love.You find value and feel a sense of
+        comfort in knowing that we aim to get better everyday at doing what is
+        important to us.
+      </p>
+    </section>
+    <br /><br /><br /><br />
+    <section class="services-container">
+      <h1 class="h-primary center">Our Services</h1>
+      <div class="services">
+        <div class="box">
+          <img src="img1.jpg" />
+          <h2 class="h-secondary center">Food Ordering</h2>
+          <p class="center">
+            We are digital nomads, living a digital life. Whatever we want can
+            be obtained with just a few clicks,even the food. You can places
+            orders online through our website and we ensure that it reaches the
+            right people in the right places and at the right time. Switching
+            over to online ordering is the best solution for you with busy
+            lifestyles.
+          </p>
+        </div>
+        <div class="box">
+          <img src="img2.jpeg" />
+          <h2 class="h-secondary center">Food Catering</h2>
+          <p class="center">
+            Our restaurant also provides food catering service. You can go to
+            our website, click on the food catering option, decide the menu and
+            the required things needed for your catering service, then book the
+            date ,time and even make a phone call for discussing everything
+            related to it with just one click. So our website makes it so easy
+            and convenient for you even for food catering services.
+          </p>
+        </div>
+        <div class="box">
+          <img src="img3.jpeg" />
+          <h2 class="h-secondary center">Bulk Ordering</h2>
+          <p class="center">
+            We even accept orders in bulk quantity for occasions like wedding
+            ceremonies, birthdays, anniversary parties etc .From meetings to
+            crowded areas there are times when one may not be able to make a
+            phone call to order food. This is the time when one can make use of
+            our website and quietly place and order without the hassle of
+            talking over the phone.Our mobile friendly website will make sure
+            that even bulk orders are delivered on time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="client-section">
+      <h1 class="h-primary center">Our Clients</h1>
+      <div id="clients">
+        <div class="client-item">
+          <img src="logo1.jpg" alt="Our Client" />
+        </div>
+        <div class="client-item">
+          <img src="logo2.jpg" alt="Our Client" />
+        </div>
+        <div class="client-item">
+          <img src="logo3.png" alt="Our Client" />
+        </div>
+        <div class="client-item">
+          <img src="logo4.png" alt="Our Client" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="h-primary center">Contact Us</h1>
+      <div id="contact-box">
+        <form>
+          <div class="form-group>">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group>">
+            <label for="Email">Email: </label>
+            <input
+              type="email"
+              name="name"
+              id="email"
+              placeholder="Enter your Email"
+            />
+          </div>
+          <div class="form-group>">
+            <label for="Phone">Phone No.:</label>
+            <input
+              type="phone"
+              name="name"
+              id="phone"
+              placeholder="Enter your Phone No."
+            />
+          </div>
+          <br />
+          <button class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="center">
+        Copyright &copy; www.HealthyEats.com . All rights reserved!
+      </div>
+    </footer>
+  </body>
+</html>
